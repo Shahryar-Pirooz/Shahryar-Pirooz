@@ -1,6 +1,6 @@
 ### Hi there 👋, My name is Shahryar
 #### A mobile and web developer
-![A mobile and web developer](Banner.png)
+![A mobile and web developer](imgs/Banner.png)
 
 I'm a mobile and web developer and I love computer science, especially programming.
 
