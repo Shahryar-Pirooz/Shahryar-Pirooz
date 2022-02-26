@@ -1,16 +1,13 @@
-### Hi there 👋, My name is Shahryar
-#### A mobile and web developer
-![A mobile and web developer](imgs/Banner.png)
+<h1> Hi there 👋, My name is Shahryar </h1>
+<h3> A mobile and web developer</h3>
+<img src="imgs/Banner.png" alt="It's me">
 
 I'm a mobile and web developer and I love computer science, especially programming.
 
-Skills: Java, Kotlin, Dart (Flutter), HTML, Sass, Python, PHP
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white"> <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"> <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
 
-- 🔭 I’m currently working on Tria 
-- 🌱 I’m currently learning Cloud Development 
-- 💬 Ask me about Android 
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white">
 
+[<img src='https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white' alt='telegram' height='40'>](https://t.me/Dev_3ss) [<img src='https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white' alt='linkedin' height='40'>](https://www.linkedin.com/in/shahryar-pirooz-6279381a5//)  [<img src='https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white' alt='twitter' height='40'>](https://twitter.com/DevEssPi) [<img src='https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white' alt='stackoverflow' height='40'>](https://stackoverflow.com/users/8499069/shahryar-pirooz)
 
-[<img src='imgs/github.png' alt='github' height='40'>](https://github.com/Shahryar-Pirooz)  [<img src='/imgs/linkedin.png' alt='linkedin' height='40'>](https://www.linkedin.com/in/shahryar-pirooz-6279381a5//)  [<img src='imgs/twitter.png' alt='twitter' height='40'>](https://twitter.com/DevEssPi)  [<img src='imgs/stack-overflow.png' alt='stackoverflow' height='40'>](https://stackoverflow.com/users/8499069/shahryar-pirooz)  [<img src='imgs/web.png' alt='website' height='40'>](dev-shahryar.web.app)  [<img src='imgs/telegram.png' alt='telegram' height='40'>](https://t.me/Dev_3ss)  
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Shahryar-Pirooz)](https://github.com/anuraghazra/github-readme-stats)    ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Shahryar-Pirooz&show_icons=true)   
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Shahryar-Pirooz&show_icons=true&theme=vue-dark)   
