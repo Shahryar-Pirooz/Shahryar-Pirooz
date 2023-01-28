@@ -1,5 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Hero from './components/hero'
+import NavBar from './components/navbar'
 
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>
+  const [pageState, setPageState] = useState('Home')
+  // handlers
+  const handlePage = (target) => setPageState(target)
+  return (
+    <div>
+      <NavBar state={pageState} handler={handlePage} />
+      <Hero />
+    </div>
+  )
 }
