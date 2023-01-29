@@ -10,6 +10,7 @@ export default function NavBar({ state, handler }) {
         if (page === state) {
           return (
             <p
+              key={page}
               className={`${pageStyle} ${selectedStyle}`}
               onClick={() => handler(page)}
             >
@@ -18,7 +19,7 @@ export default function NavBar({ state, handler }) {
           )
         } else {
           return (
-            <p className={pageStyle} onClick={() => handler(page)}>
+            <p key={page} className={pageStyle} onClick={() => handler(page)}>
               {page}
             </p>
           )

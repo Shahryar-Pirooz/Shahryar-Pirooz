@@ -1,9 +1,8 @@
 import React from 'react'
-
-export default function Hero() {
+export default function AboutMe() {
   return (
     <div className="bg-background flex flex-row flex-nowrap w-screen h-screen">
-      1
+      <h1 className="text-head">Hi there</h1>
     </div>
   )
 }
