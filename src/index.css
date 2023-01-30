@@ -4,6 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 @layer base{
+    ::-moz-selection {
+        color:#7F5AF0;
+        background: rgb(22 , 22 , 26);
+      }
+      
+      ::selection {
+        color:#7F5AF0;
+        background: rgb(22 , 22 , 26);
+      }
     html , body {
         background-color: rgb(22 , 22 , 26);
         overflow: hidden;
