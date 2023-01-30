@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Icon } from '@iconify/react'
 import me from '../../imgs/me.svg'
 
 export default function Hero() {
-  const footerIconStyle = 'text-xl text-head hover:text-primary mx-1'
   const footerIcons = [
     { icon: 'ic:baseline-telegram', href: 'https://t.me/Dev_3ss' },
     {
@@ -41,7 +40,10 @@ export default function Hero() {
           {footerIcons.map((icon) => {
             return (
               <a key={icon.icon} href={icon.href}>
-                <Icon icon={icon.icon} className={footerIconStyle} />
+                <Icon
+                  icon={icon.icon}
+                  className="text-xl text-head hover:text-primary mx-1"
+                />
               </a>
             )
           })}
