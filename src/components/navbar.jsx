@@ -7,7 +7,7 @@ export default function NavBar({ state, handler }) {
   return (
     <div>
       <div className="hidden md:flex flex-row justify-center items-center my-4">
-        {pages.map((page) => {
+        {pages.map((page, index) => {
           const pageStyle =
             ' text-head mx-3 cursor-pointer transition-all  duration-500 hover:bg-primary hover:rounded-xl hover:px-3'
           const selectedStyle =
@@ -15,7 +15,7 @@ export default function NavBar({ state, handler }) {
           if (page === state) {
             return (
               <p
-                key={page}
+                key={index}
                 className={`${pageStyle} ${selectedStyle}`}
                 onClick={() => handler(page)}
               >
@@ -24,7 +24,11 @@ export default function NavBar({ state, handler }) {
             )
           } else {
             return (
-              <p key={page} className={pageStyle} onClick={() => handler(page)}>
+              <p
+                key={index}
+                className={pageStyle}
+                onClick={() => handler(page)}
+              >
                 {page}
               </p>
             )
@@ -44,14 +48,14 @@ export default function NavBar({ state, handler }) {
             isMenuOpenState ? 'h-60' : 'h-0'
           } flex overflow-hidden w-full transition-all duration-1000 flex-col px-20 bg-background-shade rounded-md`}
         >
-          {pages.map((page) => {
+          {pages.map((page, index) => {
             const pageStyle =
               'text-center text-head my-3 transition-all  duration-500 active:bg-primary active:rounded-md'
             const selectedStyle = 'text-primary transition-all  duration-500'
             if (page === state) {
               return (
                 <p
-                  key={page}
+                  key={index}
                   className={`${pageStyle} ${selectedStyle}`}
                   onClick={() => handler(page)}
                 >
@@ -61,7 +65,7 @@ export default function NavBar({ state, handler }) {
             } else {
               return (
                 <p
-                  key={page}
+                  key={index}
                   className={pageStyle}
                   onClick={() => handler(page)}
                 >

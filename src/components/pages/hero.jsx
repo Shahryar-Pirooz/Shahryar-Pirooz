@@ -37,9 +37,9 @@ export default function Hero() {
       </div>
       <div className="my-10 flex flex-col flex-nowrap basis-1/5 md:my-3">
         <div className="flex flex-row flex-nowrap justify-center">
-          {footerIcons.map((icon) => {
+          {footerIcons.map((icon, index) => {
             return (
-              <a key={icon.icon} href={icon.href}>
+              <a key={index} href={icon.href}>
                 <Icon
                   icon={icon.icon}
                   className="text-xl text-head hover:text-primary mx-1"
