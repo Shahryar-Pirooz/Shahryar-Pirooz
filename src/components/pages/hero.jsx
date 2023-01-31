@@ -35,7 +35,7 @@ export default function Hero() {
           <img src={me} alt="it's me" />
         </div>
       </div>
-      <div className="flex flex-col flex-nowrap basis-1/5">
+      <div className="my-10 flex flex-col flex-nowrap basis-1/5 md:my-3">
         <div className="flex flex-row flex-nowrap justify-center">
           {footerIcons.map((icon) => {
             return (
