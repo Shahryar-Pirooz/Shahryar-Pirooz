@@ -15,14 +15,14 @@ export default function Skills() {
     },
   ]
   return (
-    <div className="flex flex-col md:grid md:grid-cols-3 gap-5 items-center justify-items-center w-screen h-screen pt-10 md:pt-0 md:px-5">
+    <div className="flex h-screen w-screen flex-col items-center justify-items-center gap-5 pt-10 md:grid md:grid-cols-3 md:px-5 md:pt-0">
       {skills.map((skill, index) => {
         return (
           <div
             key={index}
-            className="flex flex-col justify-center min-w-fit md:w-full md:h-1/2 p-5 mx-3 rounded-2xl transition-all duration-1000 bg-background-shade md:hover:scale-105 hover:shadow-md hover:shadow-primary"
+            className="mx-3 flex min-w-fit flex-col justify-center rounded-2xl bg-background-shade p-5 transition-all duration-1000 hover:shadow-md hover:shadow-primary md:h-1/2 md:w-full md:hover:scale-105"
           >
-            <h3 className="font-bold basis-1/3 text-3xl text-center text-head">
+            <h3 className="basis-1/3 text-center text-3xl font-bold text-head">
               {skill.head}
             </h3>
             <p className="basis-2/3 text-center text-body">{skill.body}</p>

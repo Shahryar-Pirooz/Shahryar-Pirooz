@@ -12,8 +12,8 @@ export default function Hero() {
     { icon: 'mdi:github', href: 'https://github.com/Shahryar-Pirooz' },
   ]
   return (
-    <div className="flex flex-col flex-nowrap w-screen h-screen">
-      <div className="flex flex-row flex-nowrap justify-center basis-4/5">
+    <div className="flex h-screen w-screen flex-col flex-nowrap">
+      <div className="flex basis-4/5 flex-row flex-nowrap justify-center">
         <div className="grid items-center">
           <div className="mx-auto lg:ml-16 lg:mr-4">
             <p className="text-center text-lg text-body lg:text-start ">
@@ -31,25 +31,25 @@ export default function Hero() {
             </p>
           </div>
         </div>
-        <div className="hidden lg:grid items-center shrink-0 mr-4">
+        <div className="mr-4 hidden shrink-0 items-center lg:grid">
           <img src={me} alt="it's me" />
         </div>
       </div>
-      <div className="my-10 flex flex-col flex-nowrap basis-1/5 md:my-3">
+      <div className="my-10 flex basis-1/5 flex-col flex-nowrap md:my-3">
         <div className="flex flex-row flex-nowrap justify-center">
           {footerIcons.map((icon, index) => {
             return (
               <a key={index} href={icon.href}>
                 <Icon
                   icon={icon.icon}
-                  className="text-xl text-head hover:text-primary mx-1"
+                  className="mx-1 text-xl text-head hover:text-primary"
                 />
               </a>
             )
           })}
         </div>
         <div>
-          <p className="text-head text-sm text-center">
+          <p className="text-center text-sm text-head">
             Designed and build by Shahryar
             <br />
             2022
