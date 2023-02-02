@@ -11,7 +11,7 @@ export default function NavBar({ state, handler }) {
           const pageStyle =
             ' text-head mx-3 cursor-pointer transition-all  duration-500 hover:bg-primary hover:rounded-xl hover:px-3'
           const selectedStyle =
-            'text-primary transition-all  duration-500 hover:bg-background hover:px-0'
+            'text-lg text-primary transition-all  duration-500 hover:bg-background hover:px-0'
           if (page === state) {
             return (
               <p
