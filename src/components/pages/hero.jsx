@@ -1,16 +1,16 @@
-import React from 'react'
-import { Icon } from '@iconify/react'
-import me from '../../imgs/me.svg'
+import React from "react";
+import { Icon } from "@iconify/react";
+import me from "../../imgs/me.svg";
 
 export default function Hero() {
   const footerIcons = [
-    { icon: 'ic:baseline-telegram', href: 'https://t.me/Dev_3ss' },
+    { icon: "ic:baseline-telegram", href: "https://t.me/Dev_3ss" },
     {
-      icon: 'mdi:linkedin',
-      href: 'https://www.linkedin.com/in/shahryar-pirooz-6279381a5',
+      icon: "mdi:linkedin",
+      href: "https://www.linkedin.com/in/shahryar-pirooz-6279381a5",
     },
-    { icon: 'mdi:github', href: 'https://github.com/Shahryar-Pirooz' },
-  ]
+    { icon: "mdi:github", href: "https://github.com/Shahryar-Pirooz" },
+  ];
   return (
     <div className="flex h-screen w-screen flex-col flex-nowrap">
       <div className="flex basis-4/5 flex-row flex-nowrap justify-center">
@@ -45,7 +45,7 @@ export default function Hero() {
                   className="mx-1 text-xl text-head hover:text-primary"
                 />
               </a>
-            )
+            );
           })}
         </div>
         <div>
@@ -57,5 +57,5 @@ export default function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
