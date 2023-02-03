@@ -18,16 +18,16 @@ function Card({ header, description, language }) {
   }
   // console.log(ProgLang)
   return (
-    <div className="my-5 h-full w-full rounded-lg bg-background-shade p-5 transition-all duration-1000 hover:scale-105 hover:shadow-md hover:shadow-body">
+    <div className="my-5 flex h-full w-full flex-col flex-nowrap justify-end rounded-lg bg-background-shade p-5 transition-all duration-1000 hover:scale-105 hover:shadow-md hover:shadow-body">
       <h3 className="my-5 text-center text-3xl text-head">{header}</h3>
       <p className="my-2 text-center text-lg text-body">{description}</p>
       <p
-        className="text-md my-2 self-end text-center"
+        className="text-md my-2 text-center"
         style={{ color: colors[language.toLowerCase()] }}
       >
         {language}
       </p>
-      <div className="h-1 w-full self-end" style={progressStyle}></div>
+      <div className="h-1 w-full" style={progressStyle}></div>
     </div>
   )
 }
