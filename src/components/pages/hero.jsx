@@ -19,14 +19,15 @@ export default function Hero() {
             <p className="text-center text-lg text-body lg:text-start ">
               Howdy
             </p>
-            <h1 className="text-left text-5xl font-bold leading-tight text-head lg:text-start">
+            <h1 className="text-center text-5xl font-bold leading-tight text-head lg:text-start">
               I’m <span className="text-primary">Shahryar</span>
               <h2 className="my-2 text-3xl font-bold leading-tight text-head">
-                An Android And <wbr />
+                An Android And
+                <wbr />
                 Web Developer
               </h2>
             </h1>
-            <p className="text-left text-lg text-body lg:text-start">
+            <p className="text-center text-lg text-body lg:text-start">
               I'm a highly driven, devoted MERN stack developer who,
               <br />
               besides all things technology, also loves music and art!

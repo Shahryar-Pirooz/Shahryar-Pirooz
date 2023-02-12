@@ -1,8 +1,8 @@
-import React from "react";
-import Techs from "../../imgs/techs.svg";
+import React from 'react'
+import Techs from '../../imgs/techs.svg'
 
 export default function AboutMe() {
-  const textStyle = "text-lg text-body";
+  const textStyle = 'text-lg text-body'
   return (
     <div className="flex h-screen w-screen flex-row flex-nowrap items-center">
       <div className="text-center md:mx-5 md:basis-1/2 md:text-start">
@@ -29,5 +29,5 @@ export default function AboutMe() {
         <img src={Techs} alt="DevTools" />
       </div>
     </div>
-  );
+  )
 }
