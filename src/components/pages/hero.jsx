@@ -1,32 +1,34 @@
-import React from "react";
-import { Icon } from "@iconify/react";
-import me from "../../imgs/me.svg";
+import React from 'react'
+import { Icon } from '@iconify/react'
+import me from '../../imgs/me.svg'
 
 export default function Hero() {
   const footerIcons = [
-    { icon: "ic:baseline-telegram", href: "https://t.me/Dev_3ss" },
+    { icon: 'ic:baseline-telegram', href: 'https://t.me/Dev_3ss' },
     {
-      icon: "mdi:linkedin",
-      href: "https://www.linkedin.com/in/shahryar-pirooz-6279381a5",
+      icon: 'mdi:linkedin',
+      href: 'https://www.linkedin.com/in/shahryar-pirooz-6279381a5',
     },
-    { icon: "mdi:github", href: "https://github.com/Shahryar-Pirooz" },
-  ];
+    { icon: 'mdi:github', href: 'https://github.com/Shahryar-Pirooz' },
+  ]
   return (
     <div className="flex h-screen w-screen flex-col flex-nowrap">
-      <div className="flex basis-4/5 flex-row flex-nowrap justify-center">
+      <div className="flex basis-4/5 flex-row flex-nowrap justify-around">
         <div className="grid items-center">
           <div className="mx-auto lg:ml-16 lg:mr-4">
             <p className="text-center text-lg text-body lg:text-start ">
               Howdy
             </p>
-            <h1 className="text-center text-5xl font-bold leading-tight text-head lg:text-start">
-              I’m <span className="text-primary">Shahryar</span> <br />
-              An Android And <wbr />
-              Web Developer
+            <h1 className="text-left text-5xl font-bold leading-tight text-head lg:text-start">
+              I’m <span className="text-primary">Shahryar</span>
+              <h2 className="my-2 text-3xl font-bold leading-tight text-head">
+                An Android And <wbr />
+                Web Developer
+              </h2>
             </h1>
-            <p className="text-center text-lg text-body lg:text-start">
+            <p className="text-left text-lg text-body lg:text-start">
               I'm a highly driven, devoted MERN stack developer who,
-              <wbr />
+              <br />
               besides all things technology, also loves music and art!
             </p>
           </div>
@@ -45,7 +47,7 @@ export default function Hero() {
                   className="mx-1 text-xl text-head hover:text-primary"
                 />
               </a>
-            );
+            )
           })}
         </div>
         <div>
@@ -57,5 +59,5 @@ export default function Hero() {
         </div>
       </div>
     </div>
-  );
+  )
 }
