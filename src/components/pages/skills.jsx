@@ -25,10 +25,8 @@ export default function Skills() {
             key={index}
             className="mx-3 flex min-w-fit flex-col justify-center rounded-2xl bg-background-shade p-5 transition-all duration-1000 hover:shadow-md hover:shadow-primary md:h-1/2 md:w-full md:hover:scale-105"
           >
-            <h3 className="basis-1/3 text-center text-3xl font-bold text-head">
-              {skill.head}
-            </h3>
-            <p className="basis-2/3 text-center text-body">{skill.body}</p>
+            <h3 className="txt-head2 basis-1/3 text-center">{skill.head}</h3>
+            <p className="txt-body basis-2/3 text-center">{skill.body}</p>
             <a href={skill.url} className="text-center text-primary">
               What is that?
             </a>

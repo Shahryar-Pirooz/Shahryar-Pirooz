@@ -16,18 +16,16 @@ export default function Hero() {
       <div className="flex basis-4/5 flex-row flex-nowrap justify-around">
         <div className="grid items-center">
           <div className="mx-auto lg:ml-16 lg:mr-4">
-            <p className="text-center text-lg text-body lg:text-start ">
-              Howdy
-            </p>
-            <h1 className="text-center text-5xl font-bold leading-tight text-head lg:text-start">
+            <p className="txt-body text-center lg:text-start ">Howdy</p>
+            <h1 className="txt-head1 text-center lg:text-start">
               I’m <span className="text-primary">Shahryar</span>
-              <h2 className="my-2 text-3xl font-bold leading-tight text-head">
+              <h2 className="txt-head2 my-2">
                 An Android And
                 <wbr />
                 Web Developer
               </h2>
             </h1>
-            <p className="text-center text-lg text-body lg:text-start">
+            <p className="txt-body text-center lg:text-start">
               I'm a highly driven, devoted MERN stack developer who,
               <br />
               besides all things technology, also loves music and art!

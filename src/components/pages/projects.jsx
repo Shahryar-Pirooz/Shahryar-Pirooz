@@ -20,8 +20,8 @@ function Card({ header, description, language, url }) {
   return (
     <a href={url} target="_blank" rel="noreferrer" className="m-4">
       <div className="my-5 flex h-full w-full flex-col flex-nowrap justify-end rounded-lg bg-background-shade p-5 transition-all duration-1000 hover:scale-105 hover:shadow-md hover:shadow-body">
-        <h3 className="my-5 text-center text-3xl text-head">{header}</h3>
-        <p className="my-2 text-center text-lg text-body">{description}</p>
+        <h3 className="txt-head2 my-5 text-center">{header}</h3>
+        <p className="txt-body my-2 text-center">{description}</p>
         <p
           className="text-md my-2 text-center"
           style={{ color: colors[language.toLowerCase()] }}

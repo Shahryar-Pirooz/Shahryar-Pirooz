@@ -1,10 +1,8 @@
 export default function GetInTouch() {
   return (
     <div className="flex h-screen w-screen flex-col flex-nowrap items-center justify-center">
-      <h3 className="text-center text-3xl font-bold text-head">
-        Say Somthing ...
-      </h3>
-      <p className="mt-2 text-center text-lg text-body">
+      <h3 className="txt-head2 text-center">Say Somthing ...</h3>
+      <p className="txt-body mt-2 text-center">
         If you want to tell me something, ask a question, or hire me, fill out
         this form and I will get in touch with you.
         <br />( You can use markdown )
