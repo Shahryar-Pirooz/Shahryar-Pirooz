@@ -20,7 +20,7 @@ export default function Home() {
             <h1 className="txt-head1 text-center lg:text-start">
               I’m <span className="text-primary">Shahryar</span>
             </h1>
-            <h2 className="txt-head2 my-2 text-center">
+            <h2 className="txt-head2 my-2 text-center md:text-start">
               An Android And
               <wbr />
               Web Developer

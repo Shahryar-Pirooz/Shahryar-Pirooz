@@ -18,14 +18,14 @@ export default function Skills() {
     },
   ]
   return (
-    <div className="skill-page">
+    <div className="skill-page overflow-auto pb-44 md:pb-0">
       {skills.map((skill, index) => {
         return (
           <div key={index} className="skill-card">
             <div className="basis-1/4">
               <h3 className="txt-head2">{skill.head}</h3>
             </div>
-            <div className="flex basis-2/4 place-items-center justify-center overflow-y-auto">
+            <div className="flex basis-2/4 place-items-center justify-center md:overflow-y-auto">
               <p className="txt-body m-auto">{skill.body}</p>
             </div>
             <div className="flex basis-1/4 items-end justify-center">
