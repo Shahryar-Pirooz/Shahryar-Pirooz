@@ -19,7 +19,7 @@ function Card({ header, description, language, url }) {
   // console.log(ProgLang)
   return (
     <a href={url} target="_blank" rel="noreferrer" className="m-4">
-      <div className="my-5 flex h-full w-full flex-col flex-nowrap justify-end rounded-lg bg-background-shade p-5 transition-all duration-1000 hover:scale-105 hover:shadow-md hover:shadow-body">
+      <div className="project-card">
         <h3 className="txt-head2 my-5 text-center">{header}</h3>
         <p className="txt-body my-2 text-center">{description}</p>
         <p
@@ -35,7 +35,7 @@ function Card({ header, description, language, url }) {
 }
 export default function Projects(data) {
   return (
-    <div className="grid h-screen w-screen grid-cols-1 overflow-y-scroll px-2 pb-24 md:grid-cols-3">
+    <div className="project-page">
       {data.map((project) => {
         return (
           <Card

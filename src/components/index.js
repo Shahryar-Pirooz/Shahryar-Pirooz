@@ -1,4 +1,4 @@
-import Body from './components/body'
-import NavBar from './components/navbar'
+import Body from './body'
+import NavBar from './navbar'
 
 export { Body, NavBar }

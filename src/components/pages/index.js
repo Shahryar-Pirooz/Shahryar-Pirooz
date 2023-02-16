@@ -1,7 +1,7 @@
-import Hero from './hero'
+import Home from './home'
 import Skills from './skills'
 import Projects from './projects'
 import AboutMe from './aboutMe'
 import GetInTouch from './getInTouch'
 
-export { Hero, Skills, Projects, AboutMe, GetInTouch }
+export { Home, Skills, Projects, AboutMe, GetInTouch }

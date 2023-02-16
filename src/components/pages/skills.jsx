@@ -18,18 +18,21 @@ export default function Skills() {
     },
   ]
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-items-center gap-5 pt-10 md:grid md:grid-cols-3 md:px-5 md:pt-0">
+    <div className="skill-page">
       {skills.map((skill, index) => {
         return (
-          <div
-            key={index}
-            className="mx-3 flex min-w-fit flex-col justify-center rounded-2xl bg-background-shade p-5 transition-all duration-1000 hover:shadow-md hover:shadow-primary md:h-1/2 md:w-full md:hover:scale-105"
-          >
-            <h3 className="txt-head2 basis-1/3 text-center">{skill.head}</h3>
-            <p className="txt-body basis-2/3 text-center">{skill.body}</p>
-            <a href={skill.url} className="text-center text-primary">
-              What is that?
-            </a>
+          <div key={index} className="skill-card">
+            <div className="basis-1/4">
+              <h3 className="txt-head2">{skill.head}</h3>
+            </div>
+            <div className="flex basis-2/4 place-items-center justify-center overflow-y-auto">
+              <p className="txt-body m-auto">{skill.body}</p>
+            </div>
+            <div className="flex basis-1/4 items-end justify-center">
+              <a href={skill.url} className="text-primary ">
+                What is that?
+              </a>
+            </div>
           </div>
         )
       })}

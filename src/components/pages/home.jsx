@@ -2,7 +2,7 @@ import React from 'react'
 import { Icon } from '@iconify/react'
 import me from '../../imgs/me.svg'
 
-export default function Hero() {
+export default function Home() {
   const footerIcons = [
     { icon: 'ic:baseline-telegram', href: 'https://t.me/Dev_3ss' },
     {
@@ -19,12 +19,12 @@ export default function Hero() {
             <p className="txt-body text-center lg:text-start ">Howdy</p>
             <h1 className="txt-head1 text-center lg:text-start">
               I’m <span className="text-primary">Shahryar</span>
-              <h2 className="txt-head2 my-2">
-                An Android And
-                <wbr />
-                Web Developer
-              </h2>
             </h1>
+            <h2 className="txt-head2 my-2">
+              An Android And
+              <wbr />
+              Web Developer
+            </h2>
             <p className="txt-body text-center lg:text-start">
               I'm a highly driven, devoted MERN stack developer who,
               <br />
