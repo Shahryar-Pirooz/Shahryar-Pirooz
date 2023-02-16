@@ -3,10 +3,10 @@ import { Icon } from '@iconify/react'
 
 export default function NavBar() {
   const [isMenuOpenState, setIsMenuOpenState] = useState(false)
-  const pages = ['Home', 'Skills', 'Projects', 'AboutMe', 'GetInTouch']
+  const pages = ['home', 'skills', 'projects', 'about', 'contact']
   const isSamePath = (page) => {
     const location =
-      window.location.pathname === '/' ? '/Home' : window.location.pathname
+      window.location.pathname === '/' ? '/home' : window.location.pathname
     return location === `/${page}`
   }
   return (
@@ -14,9 +14,9 @@ export default function NavBar() {
       <div className="my-4 hidden flex-row items-center justify-center md:flex">
         {pages.map((page, index) => {
           const pageStyle =
-            ' text-head mx-3 cursor-pointer transition-all  duration-500 hover:bg-primary hover:rounded-xl hover:px-3'
+            'capitalize text-head mx-3 cursor-pointer transition-all  duration-500 hover:bg-primary hover:rounded-xl hover:px-3'
           const selectedStyle =
-            'text-lg text-primary transition-all  duration-500 hover:bg-background hover:px-0'
+            'capitalize text-lg text-primary transition-all  duration-500 hover:bg-background hover:px-0'
           return (
             <a
               key={index}
@@ -43,9 +43,9 @@ export default function NavBar() {
         >
           {pages.map((page, index) => {
             const pageStyle =
-              'text-center text-head my-3 transition-all  duration-500 active:bg-primary active:rounded-md'
+              'capitalize text-center text-head my-3 transition-all  duration-500 active:bg-primary active:rounded-md'
             const selectedStyle =
-              'text-center text-primary transition-all  duration-500'
+              'capitalize text-center text-primary transition-all  duration-500'
             return (
               <a
                 key={index}

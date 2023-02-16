@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import axios from 'axios'
-import { Home, Skills, Projects, AboutMe, GetInTouch } from './pages'
+import { Home, Skills, Projects, About, Contact } from './pages'
 
 export default function Body() {
   const [dataState, setDataState] = useState([])
@@ -14,11 +14,11 @@ export default function Body() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/Home" />} />
-        <Route path="/Home" element={Home()} />
-        <Route path="/Skills" element={Skills()} />
-        <Route path="/Projects" element={Projects(dataState)} />
-        <Route path="/AboutMe" element={AboutMe()} />
-        <Route path="/GetInTouch" element={GetInTouch()} />
+        <Route path="/home" element={Home()} />
+        <Route path="/skills" element={Skills()} />
+        <Route path="/projects" element={Projects(dataState)} />
+        <Route path="/about" element={About()} />
+        <Route path="/contact" element={Contact()} />
       </Routes>
     </BrowserRouter>
   )

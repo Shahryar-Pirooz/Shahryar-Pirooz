@@ -1,7 +1,7 @@
 import React from 'react'
 import Techs from '../../imgs/techs.svg'
 
-export default function AboutMe() {
+export default function About() {
   return (
     <div className="flex h-screen w-screen flex-row flex-nowrap items-center">
       <div className="text-center md:mx-5 md:basis-1/2 md:text-start">

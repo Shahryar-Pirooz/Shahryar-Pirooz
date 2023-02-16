@@ -1,4 +1,4 @@
-export default function GetInTouch() {
+export default function Contact() {
   return (
     <div className="flex h-screen w-screen flex-col flex-nowrap items-center justify-center">
       <h3 className="txt-head2 text-center">Say Somthing ...</h3>
