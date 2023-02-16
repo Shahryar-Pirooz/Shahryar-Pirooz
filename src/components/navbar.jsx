@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Icon } from '@iconify/react'
 
 export default function NavBar() {
-  const [isMenuOpenState, setIsMenuOpenState] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pages = ['home', 'skills', 'projects', 'about', 'contact']
   const isSamePath = (page) => {
     const location =
@@ -13,15 +13,13 @@ export default function NavBar() {
     <div>
       <div className="my-4 hidden flex-row items-center justify-center md:flex">
         {pages.map((page, index) => {
-          const pageStyle =
-            'capitalize text-head mx-3 cursor-pointer transition-all  duration-500 hover:bg-primary hover:rounded-xl hover:px-3'
-          const selectedStyle =
-            'capitalize text-lg text-primary transition-all  duration-500 hover:bg-background hover:px-0'
           return (
             <a
               key={index}
               href={page}
-              className={isSamePath(page) ? selectedStyle : pageStyle}
+              className={
+                isSamePath(page) ? 'selected-navbar-item' : 'navbar-items'
+              }
             >
               {page}
             </a>
@@ -30,27 +28,25 @@ export default function NavBar() {
       </div>
       <div className="mx-4 mt-4 flex justify-end md:hidden">
         <Icon
-          icon={
-            isMenuOpenState ? 'material-symbols:close' : 'material-symbols:menu'
-          }
+          icon={isMenuOpen ? 'material-symbols:close' : 'material-symbols:menu'}
           className="absolute text-3xl text-head transition-all duration-1000"
-          onClick={() => setIsMenuOpenState(isMenuOpenState ? false : true)}
+          onClick={() => setIsMenuOpen(isMenuOpen ? false : true)}
         />
         <div
           className={`${
-            isMenuOpenState ? 'h-60' : 'h-0'
+            isMenuOpen ? 'h-60' : 'h-0'
           } flex w-full flex-col overflow-hidden rounded-md bg-background-shade px-20 transition-all duration-1000`}
         >
           {pages.map((page, index) => {
-            const pageStyle =
-              'capitalize text-center text-head my-3 transition-all  duration-500 active:bg-primary active:rounded-md'
-            const selectedStyle =
-              'capitalize text-center text-primary transition-all  duration-500'
             return (
               <a
                 key={index}
                 href={page}
-                className={isSamePath(page) ? selectedStyle : pageStyle}
+                className={
+                  isSamePath(page)
+                    ? 'selected-navbar-item-sm'
+                    : 'navbar-items-sm'
+                }
               >
                 {page}
               </a>

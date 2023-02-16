@@ -61,9 +61,20 @@
   .txt-head2 {
     @apply text-3xl;
   }
-
   .txt-body {
     @apply text-lg text-body;
+  }
+  .navbar-items {
+    @apply mx-3 cursor-pointer capitalize text-head transition-all  duration-500 hover:rounded-xl hover:bg-primary hover:px-3;
+  }
+  .selected-navbar-item {
+    @apply text-lg capitalize text-primary transition-all  duration-500 hover:bg-background hover:px-0;
+  }
+  .navbar-items-sm {
+    @apply my-3 text-center capitalize text-head transition-all  duration-500 active:rounded-md active:bg-primary;
+  }
+  .selected-navbar-item-sm {
+    @apply text-center capitalize text-primary transition-all  duration-500;
   }
   .skill-page {
     @apply flex h-screen w-screen flex-col items-center justify-items-center gap-5 pt-10 md:grid md:grid-cols-3 md:px-5 md:pt-0;
