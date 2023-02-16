@@ -65,4 +65,16 @@
   .txt-body {
     @apply text-lg text-body;
   }
+  .skill-page {
+    @apply flex h-screen w-screen flex-col items-center justify-items-center gap-5 pt-10 md:grid md:grid-cols-3 md:px-5 md:pt-0;
+  }
+  .skill-card {
+    @apply mx-auto flex min-w-fit flex-col rounded-2xl bg-background-shade p-5 text-center align-middle transition-all duration-1000 hover:shadow-md hover:shadow-primary md:h-1/2 md:w-full md:hover:scale-105;
+  }
+  .project-card {
+    @apply my-5 flex h-full w-full flex-col flex-nowrap justify-end rounded-lg bg-background-shade p-5 transition-all duration-1000 hover:scale-105 hover:shadow-md hover:shadow-body;
+  }
+  .project-page {
+    @apply grid h-screen w-screen grid-cols-1 overflow-y-scroll px-2 pb-24 md:grid-cols-3;
+  }
 }
