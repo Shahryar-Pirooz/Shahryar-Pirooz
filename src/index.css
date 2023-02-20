@@ -68,7 +68,7 @@
     @apply mx-3 cursor-pointer capitalize text-head transition-all  duration-500 hover:rounded-xl hover:bg-primary hover:px-3;
   }
   .selected-navbar-item {
-    @apply text-lg capitalize text-primary transition-all  duration-500 hover:bg-background hover:px-0;
+    @apply capitalize text-primary transition-all  duration-500 hover:bg-background hover:px-0;
   }
   .navbar-items-sm {
     @apply my-3 text-center capitalize text-head transition-all  duration-500 active:rounded-md active:bg-primary;
