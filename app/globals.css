@@ -3,21 +3,36 @@
 @tailwind utilities;
 
 @layer base {
+	:root {
+		@apply bg-background text-text shadow-shadow;
+	}
 	html[data-theme='default'] {
-		--accent-color: var(rgba(255, 167, 38, 1));
-		--background-color: var(rgba(254, 251, 252, 1));
-		--primary-color: var(rgba(45, 190, 156, 1));
-		--secondary-color: var(rgba(152, 176, 168, 1));
-		--text-color: var(rgba(17, 4, 7, 1));
+		--accent-color: rgba(255, 167, 38, 1);
+		--background-color: rgba(254, 251, 252, 1);
+		--primary-color: rgba(45, 190, 156, 1);
+		--secondary-color: rgba(152, 176, 168, 1);
+		--text-color: rgba(17, 4, 7, 1);
+		--shadow-color: rgba(255, 255, 255, 0.25);
 	}
 	html[data-theme='dark'] {
-		--accent-color: var(rgba(231, 76, 60, 1));
-		--background-color: var(rgba(4, 1, 2, 1));
-		--primary-color: var(rgba(90, 216, 186, 1));
-		--secondary-color: var(rgba(54, 75, 68, 1));
-		--text-color: var(rgba(251, 238, 241, 1));
+		--accent-color: rgba(231, 76, 60, 1);
+		--background-color: rgba(4, 1, 2, 1);
+		--primary-color: rgba(90, 216, 186, 1);
+		--secondary-color: rgba(54, 75, 68, 1);
+		--text-color: rgba(251, 238, 241, 1);
+		--shadow-color: rgba(255, 255, 255, 0.28);
 	}
 	main {
-		@apply container mx-auto;
+		@apply container mx-auto py-4;
+	}
+	input:checked ~ .dot {
+		transform: translateX(100%);
+		background-color: var(--primary-color);
+	}
+}
+
+@layer components {
+	.btn {
+		@apply rounded-full px-2 py-1 text-sm hover:cursor-pointer;
 	}
 }
