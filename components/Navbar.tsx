@@ -1,35 +1,8 @@
 'use client'
 
-import { ChangeEvent, RefObject, useEffect, useRef, useState } from 'react'
+import { ChangeEvent, useEffect, useRef, useState } from 'react'
 
-const ThemeToggle = ({
-	themeToggle,
-	themeHandler,
-}: {
-	themeToggle: RefObject<HTMLInputElement>
-	themeHandler: (e: ChangeEvent<HTMLInputElement>) => void
-}) => {
-	return (
-		<div className='flex w-fit items-center justify-center'>
-			<label htmlFor='theme' className='flex cursor-pointer items-center'>
-				<div className='relative'>
-					<input
-						id='theme'
-						type='checkbox'
-						className='sr-only'
-						ref={themeToggle}
-						onChange={(e) => themeHandler(e)}
-					/>
-					<div className='line h-4 w-10 rounded-full bg-background shadow-inner shadow-slate-400'></div>
-					<div className='dot absolute -left-1 -top-1 h-6 w-6 rounded-full border border-primary bg-background shadow transition'></div>
-				</div>
-			</label>
-		</div>
-	)
-}
-
-const Navbar = () => {
-	const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+const ThemeToggle = ({ id }: { id: string }) => {
 	const themeToggle = useRef<HTMLInputElement>(null)
 	useEffect(() => {
 		if (themeToggle.current && typeof window !== 'undefined') {
@@ -52,6 +25,27 @@ const Navbar = () => {
 			localStorage.setItem('theme', 'default')
 		}
 	}
+	return (
+		<div className='flex w-fit items-center justify-center'>
+			<label htmlFor={id} className='flex cursor-pointer items-center'>
+				<div className='relative'>
+					<input
+						id={id}
+						type='checkbox'
+						className='sr-only'
+						ref={themeToggle}
+						onChange={(e) => themeHandler(e)}
+					/>
+					<div className='line h-4 w-10 rounded-full bg-background shadow-inner shadow-slate-400'></div>
+					<div className='dot absolute -left-1 -top-1 h-6 w-6 rounded-full border border-primary bg-background shadow transition'></div>
+				</div>
+			</label>
+		</div>
+	)
+}
+
+const Navbar = () => {
+	const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 	const openDrawerHandler = () => setIsDrawerOpen(!isDrawerOpen)
 	return (
 		<nav className='flex flex-col rounded-lg p-4 shadow-md shadow-shadow transition-all duration-500 hover:shadow-lg hover:shadow-shadow md:flex-row'>
@@ -107,10 +101,7 @@ const Navbar = () => {
 							Contact
 						</li>
 						<li className='flex flex-row justify-center'>
-							<ThemeToggle
-								themeHandler={themeHandler}
-								themeToggle={themeToggle}
-							/>
+							<ThemeToggle id='themeToggleSM' />
 						</li>
 					</ul>
 				</div>
@@ -124,10 +115,7 @@ const Navbar = () => {
 				</ul>
 			</div>
 			<div className='hidden md:flex md:basis-1/3 md:items-center md:justify-end'>
-				<ThemeToggle
-					themeHandler={themeHandler}
-					themeToggle={themeToggle}
-				/>
+				<ThemeToggle id='themeToggleMD' />
 			</div>
 		</nav>
 	)
