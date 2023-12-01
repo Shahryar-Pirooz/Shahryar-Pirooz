@@ -33,6 +33,6 @@
 
 @layer components {
 	.btn {
-		@apply rounded-full px-2 py-1 text-sm hover:cursor-pointer;
+		@apply rounded-full px-2 py-1 text-sm hover:cursor-pointer active:scale-95 active:shadow-inner;
 	}
 }
