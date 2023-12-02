@@ -44,7 +44,7 @@ const ThemeToggle = ({ id }: { id: string }) => {
 	)
 }
 
-const Navbar = () => {
+export default function Navbar() {
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 	const openDrawerHandler = () => setIsDrawerOpen(!isDrawerOpen)
 	return (
@@ -120,5 +120,3 @@ const Navbar = () => {
 		</nav>
 	)
 }
-
-export default Navbar
