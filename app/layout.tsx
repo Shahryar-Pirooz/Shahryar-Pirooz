@@ -3,7 +3,7 @@ import './globals.css'
 
 import { IBM_Plex_Sans_KR } from 'next/font/google'
 
-import Navbar from '@/components/Navbar'
+import Navbar from '@/components/navbar/Navbar'
 
 const ipsk = IBM_Plex_Sans_KR({ subsets: ['latin'], weight: ['400', '700'] })
 
