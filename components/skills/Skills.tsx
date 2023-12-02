@@ -30,9 +30,9 @@ export default function Skills() {
 						context:
 							'Passion for Music\nLove for Literature\nExploring New Rhythms and Stories\nIntersection of Technology and Creativity',
 					},
-				].map((item) => {
+				].map((item, index) => {
 					return (
-						<div className='basis-1/3'>
+						<div className='basis-1/3' key={index}>
 							<Card>
 								<div className='flex h-52 w-full flex-col items-center justify-start space-y-4 py-4 text-center'>
 									<div className='basis-1/3 fill-text'>
