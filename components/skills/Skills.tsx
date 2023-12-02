@@ -45,8 +45,8 @@ export default function Skills() {
 										<ul className='list-disc'>
 											{item.context
 												.split('\n')
-												.map((line) => (
-													<li>{line}</li>
+												.map((line, index) => (
+													<li key={index}>{line}</li>
 												))}
 										</ul>
 									</div>
