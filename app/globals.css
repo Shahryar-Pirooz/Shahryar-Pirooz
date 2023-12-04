@@ -23,7 +23,7 @@
 		--shadow-color: rgba(255, 255, 255, 0.28);
 	}
 	main {
-		@apply container mx-auto py-4;
+		@apply container mx-auto py-8;
 	}
 	input:checked ~ .dot {
 		transform: translateX(100%);
