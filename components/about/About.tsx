@@ -16,7 +16,7 @@ const tools: Tool[] = [
 
 export default function About() {
 	return (
-		<section className='flex h-screen w-full flex-col justify-center space-y-8'>
+		<section className='flex h-fit w-full flex-col justify-center space-y-8'>
 			<div className='flex'>
 				<div className='card mx-auto flex h-fit w-full bg-background px-4 pt-8 shadow-lg md:basis-3/5'>
 					<div className='flex flex-col space-y-3'>
@@ -64,19 +64,21 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<div className='flex w-full flex-row flex-wrap justify-center space-x-2 space-y-2 md:space-x-8'>
-				{tools.map((item) => {
-					return (
-						<div key={item.id} title={item.name}>
-							<Image
-								alt={item.name}
-								src={item.src}
-								width={70}
-								height={70}
-							/>
-						</div>
-					)
-				})}
+			<div className='h-fit'>
+				<div className='flex w-full flex-row flex-wrap justify-center space-x-2 space-y-2 md:space-x-8'>
+					{tools.map((item) => {
+						return (
+							<div key={item.id} title={item.name}>
+								<Image
+									alt={item.name}
+									src={item.src}
+									width={70}
+									height={70}
+								/>
+							</div>
+						)
+					})}
+				</div>
 			</div>
 		</section>
 	)
