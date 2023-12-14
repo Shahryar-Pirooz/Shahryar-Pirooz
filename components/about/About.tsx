@@ -1,10 +1,24 @@
-import Card from '../card/Card'
+import Image from 'next/image'
+
+import { express, js, linux, mongo, next, node, react, ts } from '@/public'
+import Tool from '@/types/tools'
+
+const tools: Tool[] = [
+	{ id: 1, name: 'MongoDB', src: mongo },
+	{ id: 2, name: 'Express', src: express },
+	{ id: 3, name: 'ReactJS', src: react },
+	{ id: 4, name: 'NodeJS', src: node },
+	{ id: 5, name: 'NextJS', src: next },
+	{ id: 6, name: 'Typescript', src: ts },
+	{ id: 7, name: 'Javascript', src: js },
+	{ id: 8, name: 'Linux', src: linux },
+]
 
 export default function About() {
 	return (
-		<section className='relative flex h-screen w-full'>
-			<div className='mx-auto flex h-full w-full items-center justify-center md:basis-3/5'>
-				<Card>
+		<section className='flex h-screen w-full flex-col justify-center space-y-8'>
+			<div className='flex'>
+				<div className='card mx-auto flex h-fit w-full bg-background px-4 pt-8 shadow-lg md:basis-3/5'>
 					<div className='flex flex-col space-y-3'>
 						<div className='w-full text-center text-xl font-bold text-primary'>
 							About
@@ -48,7 +62,21 @@ export default function About() {
 							</p>
 						</div>
 					</div>
-				</Card>
+				</div>
+			</div>
+			<div className='flex w-full flex-row justify-center space-x-8'>
+				{tools.map((item) => {
+					return (
+						<div key={item.id} title={item.name}>
+							<Image
+								alt={item.name}
+								src={item.src}
+								width={70}
+								height={70}
+							/>
+						</div>
+					)
+				})}
 			</div>
 		</section>
 	)

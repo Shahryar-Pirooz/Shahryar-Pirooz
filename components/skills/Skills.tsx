@@ -1,7 +1,5 @@
 import { CodeSVG, MusicSVG, ToolSVG } from '@/public'
 
-import Card from '../card/Card'
-
 export default function Skills() {
 	return (
 		<section className='h-fit rounded-lg bg-secondary p-4'>
@@ -33,7 +31,7 @@ export default function Skills() {
 				].map((item, index) => {
 					return (
 						<div className='basis-1/3' key={index}>
-							<Card>
+							<div className='card'>
 								<div className='flex h-52 w-full flex-col items-center justify-start space-y-4 py-4 text-center'>
 									<div className='basis-1/3 fill-text'>
 										{item.icon}
@@ -51,7 +49,7 @@ export default function Skills() {
 										</ul>
 									</div>
 								</div>
-							</Card>
+							</div>
 						</div>
 					)
 				})}
