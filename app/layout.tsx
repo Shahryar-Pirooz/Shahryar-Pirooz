@@ -3,6 +3,7 @@ import './globals.css'
 
 import { IBM_Plex_Sans_KR } from 'next/font/google'
 
+import Footer from '@/components/footer/footer'
 import Navbar from '@/components/navbar/Navbar'
 
 const ipsk = IBM_Plex_Sans_KR({ subsets: ['latin'], weight: ['400', '700'] })
@@ -20,10 +21,9 @@ export default function RootLayout({
 	return (
 		<html lang='en' data-theme='default'>
 			<body className={ipsk.className}>
-				<main>
-					<Navbar />
-					{children}
-				</main>
+				<Navbar />
+				<main className='space-y-10'>{children}</main>
+				<Footer />
 			</body>
 		</html>
 	)
