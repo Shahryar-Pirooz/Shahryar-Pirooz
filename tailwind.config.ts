@@ -9,12 +9,12 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				accent: 'rgb(var(--accent-color))',
-				background: 'rgb(var(--background-color))',
-				primary: 'rgb(var(--primary-color))',
-				secondary: 'rgb(var(--secondary-color))',
-				text: 'rgb(var(--text-color))',
-				shadow: 'rgba(var(--shadow-color))',
+				accent: 'var(--accent-color)',
+				background: 'var(--background-color)',
+				primary: 'var(--primary-color)',
+				secondary: 'var(--secondary-color)',
+				text: 'var(--text-color)',
+				shadow: 'var(--shadow-color)',
 			},
 		},
 	},
