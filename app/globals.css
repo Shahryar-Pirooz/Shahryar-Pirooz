@@ -7,23 +7,23 @@
 		@apply bg-background text-text shadow-shadow;
 	}
 	html[data-theme='default'] {
-		--accent-color: 255, 167, 38;
-		--background-color: 254, 251, 252;
-		--primary-color: 45, 190, 156;
-		--secondary-color: 152, 176, 168;
-		--text-color: 17, 4, 7;
-		--shadow-color: 80, 77, 77, 0.25;
+		--accent-color: rgba(255, 167, 38, 1);
+		--background-color: rgba(254, 251, 252, 1);
+		--primary-color: rgba(45, 190, 156, 1);
+		--secondary-color: rgba(152, 176, 168, 1);
+		--text-color: rgba(17, 4, 7, 1);
+		--shadow-color: rgba(80, 77, 77, 0.25);
 	}
 	html[data-theme='dark'] {
-		--accent-color: 231, 76, 60;
-		--background-color: 4, 1, 2;
-		--primary-color: 90, 216, 186;
-		--secondary-color: 54, 75, 68;
-		--text-color: 251, 238, 241;
-		--shadow-color: 255, 255, 255, 0.28;
+		--accent-color: rgba(231, 76, 60, 1);
+		--background-color: rgba(4, 1, 2, 1);
+		--primary-color: rgba(90, 216, 186, 1);
+		--secondary-color: rgba(54, 75, 68, 1);
+		--text-color: rgba(251, 238, 241, 1);
+		--shadow-color: rgba(255, 255, 255, 0.28);
 	}
 	main {
-		@apply container mx-auto py-8;
+		@apply container mx-auto px-2 py-8 md:px-16;
 	}
 	input:checked ~ .dot {
 		transform: translateX(100%);
@@ -36,6 +36,6 @@
 		@apply rounded-full px-2 py-1 text-sm hover:cursor-pointer active:scale-95 active:shadow-inner;
 	}
 	.card {
-		@apply items-center justify-center rounded-lg p-3 shadow-sm shadow-shadow transition-all duration-300 hover:shadow-md;
+		@apply items-center justify-center rounded-lg p-3 shadow-sm shadow-shadow transition-all duration-300 hover:shadow-lg;
 	}
 }
