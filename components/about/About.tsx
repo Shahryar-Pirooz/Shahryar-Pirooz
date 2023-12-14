@@ -64,7 +64,7 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<div className='flex w-full flex-row justify-center space-x-8'>
+			<div className='flex w-full flex-row flex-wrap justify-center space-x-2 space-y-2 md:space-x-8'>
 				{tools.map((item) => {
 					return (
 						<div key={item.id} title={item.name}>
