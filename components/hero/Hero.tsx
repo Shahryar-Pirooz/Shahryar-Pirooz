@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import heroImg from '@/public/hero.webp'
 
@@ -18,12 +19,18 @@ export default function Hero() {
 					&apos; roll magic!🤘🎸
 				</p>
 				<div className='flex flex-row justify-center space-x-4'>
-					<button className='btn bg-primary px-6 text-background transition-all duration-300 active:shadow-shadow'>
+					<Link
+						href='/contact'
+						className='btn bg-primary px-6 text-background transition-all duration-300 active:shadow-shadow'
+					>
 						Contact Me
-					</button>
-					<button className='btn border border-primary bg-transparent px-6 text-primary transition-all duration-300 active:shadow-shadow'>
-						My Resume
-					</button>
+					</Link>
+					<Link
+						href='https://github.com/Shahryar-Pirooz'
+						className='btn border border-primary bg-transparent px-6 text-primary transition-all duration-300 active:shadow-shadow'
+					>
+						My Github
+					</Link>
 				</div>
 			</div>
 			<div className='mx-auto flex max-h-screen w-full justify-center md:justify-end'>

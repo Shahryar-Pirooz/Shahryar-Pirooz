@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import { Linkedin, Telegram } from '@/public'
 
 export default function Footer() {
@@ -11,15 +13,15 @@ export default function Footer() {
 				</span>
 			</div>
 			<div className='flex flex-row items-center justify-center space-x-3'>
-				<a
+				<Link
 					href='https://www.linkedin.com/in/shahryar-pirooz/'
 					target='_blank'
 				>
 					<Linkedin />
-				</a>
-				<a href='https://t.me/Dev_3ss/' target='_blank'>
+				</Link>
+				<Link href='https://t.me/Dev_3ss/' target='_blank'>
 					<Telegram />
-				</a>
+				</Link>
 			</div>
 		</footer>
 	)
