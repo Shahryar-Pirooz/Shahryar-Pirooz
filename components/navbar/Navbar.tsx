@@ -38,7 +38,7 @@ const ThemeToggle = ({ id }: { id: string }) => {
 						onChange={(e) => themeHandler(e)}
 					/>
 					<div className='line h-4 w-10 rounded-full bg-background shadow-inner shadow-slate-400'></div>
-					<div className='dot absolute -left-1 -top-1 h-6 w-6 rounded-full border border-primary bg-background shadow transition'></div>
+					<div className='dot absolute -left-1 -top-1 h-6 w-6 rounded-full border bg-background shadow transition hover:border-primary'></div>
 				</div>
 			</label>
 		</div>
@@ -51,8 +51,8 @@ export default function Navbar() {
 	return (
 		<nav className='flex flex-col rounded-lg p-4 shadow-md shadow-shadow transition-all duration-500 hover:shadow-lg hover:shadow-shadow md:flex-row'>
 			<div className='flex w-full flex-row justify-around md:basis-1/3 md:justify-center'>
-				<h2 className='h-full w-full text-center align-middle text-base font-bold md:text-start'>
-					Shahryar Pirooz
+				<h2 className='h-full w-full text-center align-middle text-base font-bold duration-1000 ease-out hover:text-accent md:text-start'>
+					<Link href='/'>Shahryar Pirooz</Link>
 				</h2>
 				<div className='justify-self-end rounded-full md:hidden'>
 					<div
