@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { ChangeEvent, useEffect, useRef, useState } from 'react'
 
 const ThemeToggle = ({ id }: { id: string }) => {
@@ -92,13 +93,17 @@ export default function Navbar() {
 					className={`relative h-full overflow-hidden transition-all duration-300 md:hidden`}
 				>
 					<ul className='flex h-full w-full flex-col justify-around space-x-2 pt-4'>
-						<li className='text-center hover:text-primary'>Home</li>
-						<li className='text-center hover:text-primary'>Blog</li>
 						<li className='text-center hover:text-primary'>
-							Projects
+							<Link href='/'>Home</Link>
 						</li>
 						<li className='text-center hover:text-primary'>
-							Contact
+							<Link href='/blog'>Blog</Link>
+						</li>
+						<li className='text-center hover:text-primary'>
+							<Link href='/projects'>Projects</Link>
+						</li>
+						<li className='text-center hover:text-primary'>
+							<Link href='/contact'>Contact</Link>
 						</li>
 						<li className='flex flex-row justify-center'>
 							<ThemeToggle id='themeToggleSM' />
@@ -108,10 +113,18 @@ export default function Navbar() {
 			</div>
 			<div className='hidden md:flex md:basis-1/3 md:justify-center'>
 				<ul className='flex flex-row space-x-2'>
-					<li className='btn hover:text-primary'>Home</li>
-					<li className='btn hover:text-primary'>Blog</li>
-					<li className='btn hover:text-primary'>Projects</li>
-					<li className='btn hover:text-primary'>Contact</li>
+					<li className='btn hover:text-primary'>
+						<Link href='/'>Home</Link>
+					</li>
+					<li className='btn hover:text-primary'>
+						<Link href='/blog'>Blog</Link>
+					</li>
+					<li className='btn hover:text-primary'>
+						<Link href='/projects'>Projects</Link>
+					</li>
+					<li className='btn hover:text-primary'>
+						<Link href='/contact'>Contact</Link>
+					</li>
 				</ul>
 			</div>
 			<div className='hidden md:flex md:basis-1/3 md:items-center md:justify-end'>

@@ -65,15 +65,15 @@ export default function About() {
 				</div>
 			</div>
 			<div className='h-fit'>
-				<div className='flex w-full flex-row flex-wrap justify-center space-x-2 space-y-2 md:space-x-8'>
+				<div className='space-y-2md:space-x-8 flex w-full flex-row flex-wrap items-end justify-center space-x-2'>
 					{tools.map((item) => {
 						return (
 							<div key={item.id} title={item.name}>
 								<Image
 									alt={item.name}
 									src={item.src}
-									width={70}
-									height={70}
+									width={50}
+									height={50}
 								/>
 							</div>
 						)
