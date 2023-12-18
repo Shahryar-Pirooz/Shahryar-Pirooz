@@ -36,6 +36,6 @@
 		@apply rounded-full px-2 py-1 text-sm hover:cursor-pointer active:scale-95 active:shadow-inner;
 	}
 	.card {
-		@apply items-center justify-center rounded-lg p-3 shadow-sm shadow-shadow transition-all duration-300 hover:shadow-lg;
+		@apply items-center justify-center rounded-lg p-3 shadow-sm shadow-shadow transition-all duration-300 hover:shadow-lg hover:shadow-shadow;
 	}
 }

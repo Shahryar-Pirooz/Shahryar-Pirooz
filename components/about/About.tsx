@@ -70,6 +70,7 @@ export default function About() {
 						return (
 							<div key={item.id} title={item.name}>
 								<Image
+									className='drop-shadow-md'
 									alt={item.name}
 									src={item.src}
 									width={50}
