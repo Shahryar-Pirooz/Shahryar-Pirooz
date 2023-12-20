@@ -2,15 +2,14 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
 
-const env = process.env
 const firebaseConfig = {
-	apiKey: env.API_KEY,
-	authDomain: env.AUTH_DOMAIN,
-	projectId: env.PROJECT_ID,
-	storageBucket: env.STORAGE_BUCKET,
-	messagingSenderId: env.MESSAGE_SENDER_ID,
-	appId: env.API_ID,
-	measurementId: env.MEASUREMENT_ID,
+	apiKey: process.env.NEXT_PUBLIC_API_KEY,
+	authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+	projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+	storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+	messagingSenderId: process.env.NEXT_PUBLIC_MESSAGE_SENDER_ID,
+	appId: process.env.NEXT_PUBLIC_API_ID,
+	measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 }
 
 const app = initializeApp(firebaseConfig)
