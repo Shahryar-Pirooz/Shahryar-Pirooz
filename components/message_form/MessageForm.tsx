@@ -1,4 +1,5 @@
 'use client'
+
 import { addDoc, collection } from 'firebase/firestore'
 import { useForm } from 'react-hook-form'
 
@@ -7,36 +8,31 @@ import { FormatData, schema } from '@/schema/message'
 import { yupResolver } from '@hookform/resolvers/yup'
 
 export default function MessageForm() {
+	const {
+		register,
+		handleSubmit,
+		reset,
+		formState: { errors },
+	} = useForm<FormatData>({
+		resolver: yupResolver(schema),
+	})
 	const submitHandler = async (data: FormatData) => {
 		try {
 			const now = Date.now()
 			await addDoc(collection(db, 'email'), data)
+			reset()
 		} catch (error) {
 			console.error(`error`)
 			if (error instanceof Error) new Error(error.message)
 		}
 	}
-
-	const {
-		register,
-		reset,
-		getValues,
-		formState: { errors },
-	} = useForm<FormatData>({
-		resolver: yupResolver(schema),
-	})
 	return (
 		<div className='card group w-full  p-2 md:w-1/3 md:p-8'>
 			<h1 className='transition-color w-full pb-8 text-center text-xl font-bold duration-300 group-hover:text-primary'>
 				Get In Touch
 			</h1>
 			<form
-				onSubmit={(e) => {
-					e.preventDefault()
-					submitHandler(getValues())
-					console.log(getValues())
-					reset()
-				}}
+				onSubmit={handleSubmit(submitHandler)}
 				className='flex flex-col space-y-3'
 			>
 				<div className='flex flex-col justify-between'>
