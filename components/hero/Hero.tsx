@@ -35,7 +35,7 @@ export default function Hero() {
 			</div>
 			<div className='mx-auto flex max-h-screen w-full justify-center md:justify-end'>
 				<Image
-					className='h-auto w-auto md:w-[90%]'
+					className='h-auto w-auto object-contain md:w-[90%]'
 					alt='hero image'
 					src={heroImg}
 				/>
