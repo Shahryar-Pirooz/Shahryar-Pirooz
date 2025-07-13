@@ -1,5 +1,24 @@
 # 💫 About Me:
-<br>Hi, I'm **Shahryar Pirooz**, a developer passionate about building modern, scalable solutions. I specialize in:  <br><br>- 🌐 **Frontend**: React, Next.js, Tailwind CSS  <br>- 🔧 **Backend**: Go (Golang), microservices architecture  <br>- ☁️ **Cloud Enthusiast**: Cloud computing, CI/CD, and DevOps practices  <br>- 🗄️ **Database**: PostgreSQL  <br><br>I'm committed to mastering **Go** and **PostgreSQL**, advancing my expertise in cloud technologies and microservices, and continuing my journey in front-end development.  <br><br>📫 Let’s connect: Dev.Shahryar@gmail.com
+Hi, I&apos;m **Shahryar Pirooz** — a full-stack developer with a strong passion for building modern, scalable, and secure systems. My main tech stack includes:
+						<ul className='m-3 list-disc list-inside'>
+							<li>🌐 Frontend: **Next.js, React, Tailwind CSS**</li>
+							<li>
+								🔧 Backend: **Go (Golang) — including CLI tools and microservices**
+							</li>
+							<li>
+								🗄️ Data Layer: **PostgreSQL for persistence, Redis for caching**
+							</li>
+							<li>⚙️ DevOps: **Docker, Git, GitHub CI/CD, Linux systems**</li>
+							<li>
+								🛰️ Infrastructure: Hands-on experience with **NAS servers and
+								Caddy for web serving**
+							</li>
+						</ul>
+							I&apos;m deeply interested in DevOps, cloud-native development,
+							and web application security, particularly penetration testing.
+							My focus is on mastering Go and PostgreSQL, strengthening my
+							infrastructure skills, and continuously improving as a full-stack
+							engineer.<br><br>📫 Let’s connect: Dev.Shahryar@gmail.com
 
 
 ## 🌐 Socials:
