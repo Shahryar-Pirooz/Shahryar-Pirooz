@@ -1,24 +1,14 @@
 # 💫 About Me:
-Hi, I&apos;m **Shahryar Pirooz** — a full-stack developer with a strong passion for building modern, scalable, and secure systems. My main tech stack includes:
-						<ul className='m-3 list-disc list-inside'>
-							<li>🌐 Frontend: **Next.js, React, Tailwind CSS**</li>
-							<li>
-								🔧 Backend: **Go (Golang) — including CLI tools and microservices**
-							</li>
-							<li>
-								🗄️ Data Layer: **PostgreSQL for persistence, Redis for caching**
-							</li>
-							<li>⚙️ DevOps: **Docker, Git, GitHub CI/CD, Linux systems**</li>
-							<li>
-								🛰️ Infrastructure: Hands-on experience with **NAS servers and
-								Caddy for web serving**
-							</li>
-						</ul>
-							I&apos;m deeply interested in DevOps, cloud-native development,
-							and web application security, particularly penetration testing.
-							My focus is on mastering Go and PostgreSQL, strengthening my
-							infrastructure skills, and continuously improving as a full-stack
-							engineer.<br><br>📫 Let’s connect: Dev.Shahryar@gmail.com
+👋 Hi, I’m Shahryar – a full-stack software engineer with a passion for backend systems, privacy-focused development, and clean architecture.  
+
+🔧 I mostly work with Go, PostgreSQL, Docker, and microservices on the backend, and use React + TypeScript + TailwindCSS for frontend tasks when needed.  
+
+🛡️ I care about secure coding, DevOps practices, and building systems that are reliable, scalable, and self-hostable.  
+
+🐧 I’ve been a Linux user and FOSS advocate for over a decade.  
+
+📂 You can find my open-source work here on GitHub — including full-stack tools, crawlers, bots, and dev utilities.
+
 
 
 ## 🌐 Socials:
