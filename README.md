@@ -1,29 +1,45 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="30px">
+<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="60px" height="60px">
 
 # Hey, I'm Shahryar Pirooz!
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=435&lines=Frontend%20Developer;Backend%20Developer;Web%20penetest...)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=435&lines=Frontend%20Developer;Go%20Developer;Open%20Source%20Enthusiast;Linux%20•%20Docker%20•%20Self-Hosting)](https://git.io/typing-svg)
 
 </div>
 
 ## 🚀 About Me
 
-👋 Hi, I’m Shahryar – a full-stack software engineer with a passion for backend systems, privacy-focused development, and clean architecture.
+I'm a software engineer with a strong frontend background and a growing focus on backend development using Go. I enjoy building reliable software, exploring system design, and contributing to open-source projects.
 
-🔧 I mostly work with Go, PostgreSQL, Docker, and microservices on the backend, and use React + TypeScript + TailwindCSS for frontend tasks when needed.
+## 💻 What I work with
 
-🛡️ I care about secure coding, DevOps practices, and building systems that are reliable, scalable, and self-hostable.
+* **Backend:** Go, PostgreSQL, SQLite, MariaDB, Docker, REST APIs, Microservices
+* **Frontend:** React, Next.js, TypeScript, JavaScript, Tailwind CSS
+* **Tools:** Linux, Git, Bash, Docker
 
-🐧 I’ve been a Linux user and FOSS advocate for over a decade.
+## 🚀 Current Focus
 
-📂 You can find my open-source work here on GitHub — including full-stack tools, crawlers, bots, and dev utilities.
+* Deepening my knowledge of Go and backend architecture
+* Building production-ready backend services and full-stack applications
+* Learning more about application security and penetration testing
+* Contributing to open-source projects
 
-- 🏢 Working at **** in ****
-- 🌱 Currently learning **Web application penetration testing, security practices, and advanced Go programming.**
-- 💬 Ask me about **Frontend development with React and Next.js, web application security, and modern UI/UX principles.**
-- ⚡ He enjoys creating responsive web applications with a focus on Persian language interfaces.
+## ❤️ Interests
+
+* 🐧 Linux
+* 🌍 Free & Open Source Software (FOSS)
+* 🏠 Self-hosted applications
+* ⚙️ Developer tools
+* 🧩 Clean architecture
+* 🔒 Security-minded development
+
+## 📂 On this GitHub
+
+You'll find personal projects, full-stack applications, backend services, developer tools, bots, crawlers, and experiments built while learning and exploring new technologies.
+
+I'm always interested in connecting with developers, collaborating on open-source projects, and learning from experienced engineers.
+
 
 ## 🛠️ Tech Stack
 
